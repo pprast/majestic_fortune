@@ -77,7 +77,7 @@ function spinFortuneWheel(giftId) {
 function showGift(doScroll) {
     let spin = JSON.parse(localStorage.fortune_spin) // Парсим данные о вращении
 
-    $(".win__gift-name").text(spin.prize + " + 5% скидки на все услуги");
+    $(".win__gift-name").text(spin.prize);
     // $("#win-promocode").text(spin.spin_gift) // Заменяем 
     $("#win-link").attr("href", spin.spin_message)
 
